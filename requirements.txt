@@ -1,0 +1,40 @@
+# Core (install a CUDA-enabled PyTorch matching your toolkit first, e.g. via pytorch.org)
+torch
+torchvision
+
+# Numerics / IO
+numpy
+scipy
+Pillow
+imageio
+plyfile
+laspy
+einops
+jaxtyping
+tqdm
+matplotlib
+colorama
+
+# Perceptual metric used during training
+lpips
+
+# Sparse scatter ops (must match your torch + CUDA version; see pytorch-scatter docs)
+torch-scatter
+
+# Logging (optional, enabled with --use_wandb)
+wandb
+
+# Interactive viewer (gui.py only)
+dearpygui
+dearpygui-ext
+pyquaternion
+opencv-python
+icecream
+
+# Optional remote debugging (auto_debug.py, activated with DEBUGPY=1)
+debugpy
+
+# NOTE: the CUDA extensions in submodules/ are installed separately:
+#   cd submodules && bash install_all.sh
+# and the GPCC geometry codec (tmc3) must be built from MPEG-PCC-TMC13
+# and placed on PATH (see README).

@@ -1,0 +1,30 @@
+# Data and experiment outputs
+data/
+outputs/
+Exp/
+render_results/
+GUI_results/
+*.log
+
+# External codec (build separately, see README)
+mpeg-pcc-tmc13/
+
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Weights & logs
+wandb/
+*.pth
+*.pt
